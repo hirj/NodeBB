@@ -142,7 +142,7 @@ module.exports = function (User) {
 		}
 
 		if (!utils.isUserNameValid(userData.username) || !userData.userslug) {
-			throw new Error(`[[error:invalid-username, ${userData.username}]]`);
+			throw new Error(`[[error:invalid-username ${userData.username} - ${userData.userslug}`);
 		}
 
 		if (userData.password) {
